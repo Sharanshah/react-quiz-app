@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { QuizContext } from "../context/quiz-context";
+import { GiPartyPopper } from "react-icons/gi";
 
 const Result = () => {
   const { quizData, userAnswers, resetQuiz } = useContext(QuizContext);
@@ -16,11 +17,22 @@ const Result = () => {
     <div>
       <h2>Quiz Completed!</h2>
       <p className="score">
-        Congratulations! You answered {score} out of {quizData.length} questions correctly.
+        {score > quizData.length / 2
+          ? (
+            <>
+              Congratulations <GiPartyPopper style={{ color: "orange", fontSize: "1.5rem" }} /> you scored {score}/{quizData.length}!
+            </>
+          )
+          : (
+            <>
+              Better luck next time!! You answered {score} out of {quizData.length} questions correctly.
+            </>
+          )
+        }
       </p>
-      <p className="score-details">
+      {/* <p className="score-details">
         Your Score: {score} / {quizData.length}
-      </p>
+      </p> */}
       <button className="restart-button" onClick={resetQuiz}>
         Restart Quiz
       </button>

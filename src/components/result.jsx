@@ -16,6 +16,9 @@ const Result = () => {
     <div>
       <h2>Quiz Completed!</h2>
       <p className="score">
+        Congratulations! You answered {score} out of {quizData.length} questions correctly.
+      </p>
+      <p className="score-details">
         Your Score: {score} / {quizData.length}
       </p>
       <button className="restart-button" onClick={resetQuiz}>

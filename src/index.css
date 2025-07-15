@@ -6,18 +6,18 @@ body {
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f4f8;
-  color: #333;
+  color: #543310;
 }
 
 /* Container styling for the app */
 .app-container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 50px auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Lato', sans-serif;
+  background: #F8F4E1;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 5);
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Header styling */
@@ -31,6 +31,7 @@ h2 {
 .question {
   font-size: 1.2em;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 /* Option button styling */
@@ -41,19 +42,24 @@ h2 {
   margin: 8px 0;
   border: 2px solid transparent;
   border-radius: 6px;
-  background: #e7ecf0;
+  background: #AF8F6F;
   cursor: pointer;
   text-align: left;
   transition: background 0.3s, border 0.3s;
+  color : #F8F4E1;
+  font-weight:bolder;
+  
 }
 
 .option:hover {
-  background: #d6dde5;
+  background: #F8F4E1;
+  color: #543310;
 }
 
 .option.selected {
-  background: #90caf9;
-  border: 2px solid #42a5f5;
+  background: #F8F4E1;
+  border: 2px solid #74512D;
+  color: #543310;
 }
 
 /* Navigation button styles */
@@ -66,7 +72,7 @@ h2 {
 .nav-buttons button {
   padding: 10px 20px;
   border: none;
-  background: #42a5f5;
+  background: #543310;
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -75,11 +81,11 @@ h2 {
 }
 
 .nav-buttons button:hover {
-  background: #1e88e5;
+  background: #74512D;
 }
 
 .nav-buttons button:disabled {
-  background: #a0c4e3;
+  background: #AF8F6F;
   cursor: not-allowed;
 }
 
@@ -89,7 +95,7 @@ h2 {
   margin: 20px auto;
   padding: 10px 20px;
   border: none;
-  background: #42a5f5;
+  background: #543310;
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -98,7 +104,7 @@ h2 {
 }
 
 .restart-button:hover {
-  background: #1e88e5;
+  background: #74512D;
 }
 
 /* Score display styling */

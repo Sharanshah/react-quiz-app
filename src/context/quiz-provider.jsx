@@ -34,6 +34,27 @@ const QuizProvider = ({ children }) => {
     ],
     answer: "A syntax extension for JavaScript",
   },
+  {
+    question: "Which of the following is a lifecycle method in React?",
+    options: [        
+        "useState",
+        "render",
+        "componentDidMount",    
+        "useEffect"
+    ],
+    answer: "componentDidMount",
+  },
+  {
+    question: "Who developed React?",
+    options: [
+      "Google",             
+        "Facebook",
+        "Microsoft",
+        "Apple"
+    ],
+    answer: "Facebook",
+  },
+  
   ];
 
   const initialAnswers = quizData.map(() => null);
